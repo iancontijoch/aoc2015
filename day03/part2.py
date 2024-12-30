@@ -13,19 +13,19 @@ ARROW_2_DIR = {
     '^': support.Direction4.UP,
     '>': support.Direction4.RIGHT,
     'v': support.Direction4.DOWN,
-    '<': support.Direction4.LEFT
+    '<': support.Direction4.LEFT,
 }
 
 
 def compute(s: str) -> int:
     start = (0, 0)
     seen = {start}
-    for arrows_s in (s[::2], s[1::2]): 
+    for arrows_s in (s[::2], s[1::2]):
         pos = start
         for c in arrows_s:
-            pos = ARROW_2_DIR.get(c).apply(*pos)
+            pos = ARROW_2_DIR.get(c, support.Direction4.UP).apply(*pos)
             seen.add(pos)
-        
+
     return len(seen)
 
 

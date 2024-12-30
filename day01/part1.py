@@ -24,7 +24,7 @@ def compute(s: str) -> int:
         ('())', -1),
         ('))(', -1),
         (')))', -3),
-        (')())())', -3)       
+        (')())())', -3),
     ),
 )
 def test(input_s: str, expected: int) -> None:

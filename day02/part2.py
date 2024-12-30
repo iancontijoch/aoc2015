@@ -16,14 +16,15 @@ def compute(s: str) -> int:
     for line in lines:
         l, w, h = map(int, line.split('x'))
         total += 2 * min(l + w, l + h, w + h) + (l * w * h)
-        
+
     return total
+
 
 @pytest.mark.parametrize(
     ('input_s', 'expected'),
     (
         ('2x3x4', 34),
-        ('1x1x10', 14)
+        ('1x1x10', 14),
     ),
 )
 def test(input_s: str, expected: int) -> None:

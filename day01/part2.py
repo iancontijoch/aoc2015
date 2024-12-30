@@ -16,13 +16,14 @@ def compute(s: str) -> int:
         total += 1 if c == '(' else -1
         if total < 0:
             return i + 1
+    return 0
 
 
 @pytest.mark.parametrize(
     ('input_s', 'expected'),
     (
         (')', 1),
-        ('()())', 5)    
+        ('()())', 5),
     ),
 )
 def test(input_s: str, expected: int) -> None:

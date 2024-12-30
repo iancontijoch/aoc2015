@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import _md5
 import argparse
 import os.path
 
@@ -9,29 +10,26 @@ import support
 
 INPUT_TXT = os.path.join(os.path.dirname(__file__), 'input.txt')
 
-ARROW_2_DIR = {
-    '^': support.Direction4.UP,
-    '>': support.Direction4.RIGHT,
-    'v': support.Direction4.DOWN,
-    '<': support.Direction4.LEFT,
-}
+
+def _get_key(s: str, n: int) -> str:
+    return _md5.md5(str.encode(f'{s}{n}')).hexdigest()
 
 
 def compute(s: str) -> int:
-    pos = (0, 0)
-    seen = {pos}
-    for c in s:
-        pos = ARROW_2_DIR.get(c, support.Direction4.UP).apply(*pos)
-        seen.add(pos)
-    return len(seen)
+    s = s.strip('\n')
+    n = 1
+    while True:
+        key = _get_key(s, n)
+        if key[:6] == '0' * 6:
+            return n
+        n += 1
 
 
 @pytest.mark.parametrize(
     ('input_s', 'expected'),
     (
-        ('>', 2),
-        ('^>v<', 4),
-        ('^v^v^v^v^v', 2),
+        ('abcdef', 609043),
+        ('pqrstuv', 1048970),
     ),
 )
 def test(input_s: str, expected: int) -> None:
