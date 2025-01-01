@@ -1,0 +1,15 @@
+> 10 μs
+answer: 311311222113
+That's not the right answer; your answer is too high.
+
+> 163 ms
+answer: 484056
+That's not the right answer; your answer is too high.
+
+> 133 ms
+answer: 360154
+That's the right answer!
+
+> 1893 ms
+answer: 5103798
+That's the right answer!
