@@ -1,0 +1,8 @@
+== Part2 ==
+53673 too low
+
+46704 too low
+
+Correct answer!
+68466
+> 94382 μs
