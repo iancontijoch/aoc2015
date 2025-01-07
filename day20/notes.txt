@@ -1,0 +1,9 @@
+== Part 2 ==
+
+> 25510 ms
+answer: 720720
+That's not the right answer; your answer is too low.
+
+> 22285 ms
+answer: 786240
+That's the right answer!
