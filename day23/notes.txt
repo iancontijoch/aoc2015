@@ -6,3 +6,6 @@ That's the right answer!
 
 == Part 2 ==
 
+> 420 μs
+answer: 334
+That's the right answer!
