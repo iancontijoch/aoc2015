@@ -1,0 +1,4 @@
+== Part 1 ==
+> 5664 ms
+answer: 19980801
+That's the right answer!
