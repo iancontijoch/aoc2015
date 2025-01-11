@@ -1,2 +1,10 @@
+== Part 1 ==
 Answer: 10952264083
 That's not the right answer; your answer is too high.
+
+Answer: 10723906903
+That's the right answer!
+
+== Part 2 ==
+Answer: 74850409
+That's the right answer!
