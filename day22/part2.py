@@ -194,6 +194,14 @@ def game_loop(
         if p1.mana_spent >= min_mana:
             continue
 
+        if turn == 'player':
+            p1.hp -= 1
+            # check health
+            if p1.hp <= 0:
+                losing_states.add(state)
+                game_over = True
+                continue
+
         # execute active effects at start of turn and check if it ends the game
         for effect in active_effects:
             effect.apply(p1, p2)

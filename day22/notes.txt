@@ -1,3 +1,4 @@
+== Part 1 ==
 Answer: 854
 That's not the right answer; your answer is too low.
 
@@ -17,4 +18,9 @@ Answer: 1309
 That's not the right answer.
 
 Answer: 1269
+That's the right answer!
+
+== Part 2 ==
+1309
+> 3042 ms
 That's the right answer!
