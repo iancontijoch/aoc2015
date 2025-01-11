@@ -1,0 +1,20 @@
+Answer: 854
+That's not the right answer; your answer is too low.
+
+Answer: 1392
+That's not the right answer; your answer is too high.
+
+Answer: 2063
+That's not the right answer; your answer is too high.
+
+Answer: 1295
+That's not the right answer.
+
+Answer: 1235
+That's not the right answer.
+
+Answer: 1309
+That's not the right answer.
+
+Answer: 1269
+That's the right answer!
